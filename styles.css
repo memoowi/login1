@@ -1,0 +1,140 @@
+body {
+    height: 100vh !important;
+}
+
+.shadow {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.10) !important;   
+}
+
+h3 {
+    color: #0095da !important;
+}
+
+input {
+    background: #f1f2f2 !important;
+    border: 2px solid #f1f2f2 !important;
+    transition: 0.2s ease-in-out;
+}
+
+input:hover {
+    background: #e1e3e4 !important;
+    border: 2px solid #e1e3e4 !important;
+}
+
+input:focus {
+    border: 2px solid #0eb3ff !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+label::after {
+    background: none !important;
+}
+
+.form-floating > .form-control:focus ~ label {
+    color: #0eb3ff !important;
+}
+
+span, .alternate, a {
+    color: #0095da !important;
+}
+
+.bg-danger {
+    background-color: #f25b61 !important;
+}
+
+button {
+    border-color: white !important;
+}
+
+/* Button Main : Masuk */
+.button {
+    background: #0095da !important;
+    color: white !important;
+    transition: 0.2s ease-in-out;
+}
+.button:hover {
+    background: #0072a7 !important;
+    color: white !important;
+}
+.button:disabled {
+    background: #c8cbcd !important;
+    color: rgba(25, 34, 42, 0.7) !important;
+}
+
+/* Google Facebook Button */
+.button-alternate, .snk {
+    color: rgba(25, 34, 42, 0.7) !important;
+}
+
+/* Tidak Punya Akun Text dan text input*/
+.details, .form-floating label {
+    color: rgba(25, 34, 42, 0.4) !important;
+}
+
+/* Eye Password Button */
+i {
+    cursor: pointer;
+    fill: #797f85;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    z-index: 1;
+}
+
+.eye {
+    content: url(images/eye-fill.svg);
+}
+
+.eye-slash {
+    content: url(images/eye-slash-fill.svg);
+}
+
+/* responsive */
+@media screen and (max-width: 960px) {
+    .main {
+        padding: 0 !important;
+        box-shadow: none !important;
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+    .row {
+        display: block !important;
+        margin: 0 !important;
+    }
+    .col-6 {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .left-login, .left-signup {
+        padding: 0 !important;
+    }
+
+    .left-login img {
+        content: url(images/1m.svg) !important;
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .left-signup img {
+        content: url(images/2m.svg) !important;
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .right {
+        padding: 0 1.5rem !important;
+    }
+}
+
+/* Register Page */
+/* Input CheckBox */
+#checkbox {
+    cursor: pointer;
+    height: 30px;
+    transform: scale(1.5);
+    filter: hue-rotate(340deg);
+    transition: 0.3s ease-in-out;
+}

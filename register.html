@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container-lg h-100 d-flex align-items-center justify-content-center">
+        <div class="main shadow rounded-4 p-5">
+            <div class="row my-4 mx-5">
+                <!-- Kiri : Image -->
+                <div class="left-signup col-6 d-flex justify-content-center align-items-center">
+                    <img src="images/2.svg" alt="Signup Picture" class="img-fluid signup-img">
+                </div>
+                <!-- Kanan : Main Content -->
+                <div class="right col-6 d-flex justify-content-center align-items-center">
+                    <div class="w-100">
+                        <!-- Title -->
+                        <div class="mb-4">
+                            <h3 class="text-center">Daftar di Blibli</h3>
+                        </div>
+                        <!-- Box Shadowed -->
+                        <div class="shadow rounded-4 p-4">
+                            <div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" placeholder="Nama lengkap" id="floatingName" class="form-control w-100 rounded-3 name" required>
+                                    <label for="floatingName">Nama lengkap</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" placeholder="Email/nomor HP" id="floatingEmail" class="form-control w-100 rounded-3 email" required>
+                                    <label for="floatingEmail">Email/nomor HP</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="password" placeholder="Kata sandi" id="floatingPassword" class="form-control w-100 rounded-3 password" required>
+                                    <label for="floatingPassword">Kata sandi</label>
+                                    <i class="eye" id="togglePassword"></i>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <input type="checkbox" id="checkbox" class="ms-1 me-3">
+                                <label for="checkbox" class="">
+                                    <p class="snk">
+                                        Dengan mencentang ini, kamu menyetujui <a href="#" class="text-decoration-none">Syarat & Ketentuan</a> kami.
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="button btn rounded-5 px-5 py-2 fw-medium">
+                                    Daftar
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Opsi Lain -->
+                        <div class="mt-3">
+                            <div class="d-flex justify-content-center align-items-center gap-3 pt-2">
+                                <div class="shadow rounded-4 p-1">
+                                    <button class="btn button-alternate">
+                                        <img class="me-2" src="https://www.static-src.com/frontend/member/static/3.90.0-1/desktop/img/facebook.3cbc9602.svg" alt="Facebook Icon">
+                                        Facebook
+                                    </button>
+                                </div>
+                                <div class="shadow rounded-4 p-1">
+                                    <button class="btn button-alternate">
+                                        <img class="me-2" src="https://www.static-src.com/frontend/member/static/3.90.0-1/desktop/img/google.fa6e9370.svg" alt="Google Icon">
+                                        Google
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Opsi Register -->
+                        <div class="text-center my-2 small">
+                            <p class="details py-2">
+                                Sudah terdaftar?  
+                                <a href="index.html" class="text-decoration-none fw-medium">Masuk</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
