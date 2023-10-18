@@ -1,13 +1,17 @@
 //Tombol Masuk or regist #masih_cacat
-let input = document.querySelector(".email") && document.querySelector(".password");
+let emailInput = document.querySelector(".email");
+let passwordInput = document.querySelector(".password");
 let inputButton = document.querySelector(".button");
 
 inputButton.disabled = true;
 
-input.addEventListener("change", success);
+emailInput.addEventListener("input", success);
+passwordInput.addEventListener("input", success);
 
 function success() {
-    if (input.value.length > 0 ) {
+    let emailValue = emailInput.value.trim();
+    let passwordValue = passwordInput.value.trim();
+    if (emailInput.value.length > 0 && passwordInput.value.length > 0) {
         inputButton.disabled = false;
     }
     else {
