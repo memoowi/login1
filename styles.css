@@ -21,7 +21,7 @@ input:hover {
     border: 2px solid #e1e3e4 !important;
 }
 
-input:focus {
+input:focus { 
     border: 2px solid #0eb3ff !important;
     outline: none !important;
     box-shadow: none !important;
@@ -31,7 +31,7 @@ label::after {
     background: none !important;
 }
 
-.form-floating > .form-control:focus ~ label {
+.form-control:focus ~ label {
     color: #0eb3ff !important;
 }
 
@@ -58,9 +58,12 @@ button {
     color: white !important;
 }
 .button:disabled {
+    cursor: not-allowed !important;
+    pointer-events: all !important;
     background: #c8cbcd !important;
     color: rgba(25, 34, 42, 0.7) !important;
 }
+
 
 /* Google Facebook Button */
 .button-alternate, .snk {
@@ -80,37 +83,42 @@ i {
     top: 18px;
     right: 15px;
     z-index: 1;
-}
-
-.eye {
     content: url(images/eye-fill.svg);
 }
+
+/* .eye {
+    content: url(images/eye-fill.svg);
+} */
 
 .eye-slash {
     content: url(images/eye-slash-fill.svg);
 }
 
 /* responsive */
-@media screen and (max-width: 960px) {
-    .main {
+@media screen and (max-width: 768px) {
+    /* .main {
         padding: 0 !important;
         box-shadow: none !important;
         position: absolute !important;
         left: 0 !important;
         right: 0 !important;
-    }
-    .row {
+    } */
+    /* .row {
         display: block !important;
         margin: 0 !important;
-    }
-    .col-6 {
+    } */
+    /* .box-luar {
+        padding: 0 !important;
+        overflow: hidden !important;
+    } */
+    /* .col-6 {
         display: block !important;
         width: 100% !important;
-    }
+    } */
 
-    .left-login, .left-signup {
+    /* .left-login, .left-signup {
         padding: 0 !important;
-    }
+    } */
 
     .left-login img {
         content: url(images/1m.svg) !important;
@@ -118,15 +126,18 @@ i {
         margin-bottom: 1rem !important;
     }
 
-    .left-signup img {
+    /* .left-signup img {
         content: url(images/2m.svg) !important;
         width: 100% !important;
         margin-bottom: 1rem !important;
-    }
-    
-    .right {
+    } */
+    /* .right {
         padding: 0 1.5rem !important;
-    }
+        width: 650px !important;
+    } */
+    /* .qr {
+        display: none !important;
+    } */
 }
 
 /* Register Page */
@@ -136,5 +147,5 @@ i {
     height: 30px;
     transform: scale(1.5);
     filter: hue-rotate(340deg);
-    transition: 0.3s ease-in-out;
+    transition: ease-in-out;
 }
